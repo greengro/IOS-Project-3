@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Choose" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which One Do You Like?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eY-Z9-Dud">
+                                <rect key="frame" x="16" y="64" width="382" height="46.333333333333343"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose an option" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3z-lS-Obn">
+                                <rect key="frame" x="16" y="749.66666666666663" width="382" height="46"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJW-ZX-WpZ">
+                                <rect key="frame" x="112" y="182.66666666666663" width="190" height="266"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VJW-ZX-WpZ" secondAttribute="height" multiplier="1:1.4" id="HmI-Tq-TJ7"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="alan-king@500"/>
+                                <connections>
+                                    <action selector="pressSunDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oKm-ji-mMK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBb-Cb-bc9">
+                                <rect key="frame" x="16" y="803.66666666666663" width="382" height="46.333333333333371"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ppe-Ki-xOC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8Q-Lo-ZeF">
+                                <rect key="frame" x="112" y="463.66666666666674" width="190" height="266"/>
+                                <state key="normal" title="Button" image="charles-deluvio@500"/>
+                                <connections>
+                                    <action selector="pressSadDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s6I-O7-yBR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6N1-z0-b3u">
+                                <rect key="frame" x="16" y="128.33333333333334" width="382" height="46.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6N1-z0-b3u" firstAttribute="height" secondItem="4eY-Z9-Dud" secondAttribute="height" id="1Xh-tp-uhe"/>
+                            <constraint firstItem="y3z-lS-Obn" firstAttribute="trailing" secondItem="4eY-Z9-Dud" secondAttribute="trailing" id="1wg-8j-dk7"/>
+                            <constraint firstItem="4eY-Z9-Dud" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="740-x6-6Of"/>
+                            <constraint firstItem="N8Q-Lo-ZeF" firstAttribute="trailing" secondItem="VJW-ZX-WpZ" secondAttribute="trailing" id="7dt-d4-46Y"/>
+                            <constraint firstItem="6N1-z0-b3u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Bm8-Ad-Qcg"/>
+                            <constraint firstItem="y3z-lS-Obn" firstAttribute="leading" secondItem="4eY-Z9-Dud" secondAttribute="leading" id="CBd-mP-V9n"/>
+                            <constraint firstItem="rBb-Cb-bc9" firstAttribute="leading" secondItem="4eY-Z9-Dud" secondAttribute="leading" id="Gfu-eO-Y8s"/>
+                            <constraint firstItem="N8Q-Lo-ZeF" firstAttribute="width" secondItem="VJW-ZX-WpZ" secondAttribute="width" id="H41-l8-csy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N8Q-Lo-ZeF" secondAttribute="trailing" constant="112" id="HUJ-Pw-bvo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4eY-Z9-Dud" secondAttribute="trailing" constant="16" id="Jmo-RK-yQB"/>
+                            <constraint firstItem="VJW-ZX-WpZ" firstAttribute="top" secondItem="6N1-z0-b3u" secondAttribute="bottom" constant="8" id="M7u-2J-XeU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rBb-Cb-bc9" secondAttribute="bottom" constant="12" id="NZw-Ux-K8l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rBb-Cb-bc9" secondAttribute="trailing" constant="16" id="OTd-wW-DZY"/>
+                            <constraint firstItem="VJW-ZX-WpZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="QE4-Rf-Wl6"/>
+                            <constraint firstItem="y3z-lS-Obn" firstAttribute="top" secondItem="N8Q-Lo-ZeF" secondAttribute="bottom" constant="20" id="RHS-nm-WkM"/>
+                            <constraint firstItem="6N1-z0-b3u" firstAttribute="trailing" secondItem="4eY-Z9-Dud" secondAttribute="trailing" id="Sbe-7B-eV6"/>
+                            <constraint firstItem="rBb-Cb-bc9" firstAttribute="trailing" secondItem="4eY-Z9-Dud" secondAttribute="trailing" id="Svc-jv-gMe"/>
+                            <constraint firstItem="6N1-z0-b3u" firstAttribute="leading" secondItem="4eY-Z9-Dud" secondAttribute="leading" id="YGk-dk-rck"/>
+                            <constraint firstItem="4eY-Z9-Dud" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Zjs-1V-VUZ"/>
+                            <constraint firstItem="6N1-z0-b3u" firstAttribute="top" secondItem="4eY-Z9-Dud" secondAttribute="bottom" constant="18" id="cxu-W8-d2m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y3z-lS-Obn" secondAttribute="trailing" constant="16" id="f9Y-Z6-9FB"/>
+                            <constraint firstItem="rBb-Cb-bc9" firstAttribute="height" secondItem="4eY-Z9-Dud" secondAttribute="height" id="i3d-4R-Pfu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6N1-z0-b3u" secondAttribute="trailing" constant="16" id="k0e-el-Gqz"/>
+                            <constraint firstItem="rBb-Cb-bc9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kR4-4Z-I0E"/>
+                            <constraint firstItem="N8Q-Lo-ZeF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="pO6-cL-83b"/>
+                            <constraint firstItem="N8Q-Lo-ZeF" firstAttribute="height" secondItem="VJW-ZX-WpZ" secondAttribute="height" id="rtf-ty-Jh3"/>
+                            <constraint firstItem="y3z-lS-Obn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uI9-bw-iTY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VJW-ZX-WpZ" secondAttribute="trailing" constant="112" id="ugf-xW-mmf"/>
+                            <constraint firstItem="N8Q-Lo-ZeF" firstAttribute="leading" secondItem="VJW-ZX-WpZ" secondAttribute="leading" id="yHT-hB-R1d"/>
+                            <constraint firstItem="y3z-lS-Obn" firstAttribute="height" secondItem="4eY-Z9-Dud" secondAttribute="height" id="yMP-m6-caH"/>
+                            <constraint firstItem="N8Q-Lo-ZeF" firstAttribute="top" secondItem="VJW-ZX-WpZ" secondAttribute="bottom" constant="15" id="yQd-gj-gcI"/>
+                            <constraint firstItem="rBb-Cb-bc9" firstAttribute="top" secondItem="y3z-lS-Obn" secondAttribute="bottom" constant="8" id="zJQ-zo-Aw7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SJB-d5-BRx" appends="YES" id="hmQ-NN-bcl"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="chooseOp" destination="y3z-lS-Obn" id="HCS-A4-PnO"/>
+                        <outlet property="reset" destination="rBb-Cb-bc9" id="gmi-Cz-6mE"/>
+                        <outlet property="sadDog" destination="N8Q-Lo-ZeF" id="w1g-8E-MKn"/>
+                        <outlet property="sunDog" destination="VJW-ZX-WpZ" id="qCD-Rc-L8p"/>
+                        <outlet property="textBox" destination="6N1-z0-b3u" id="FIx-OZ-zhf"/>
+                        <outlet property="whichOne" destination="4eY-Z9-Dud" id="F7H-R8-V5Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SJB-d5-BRx">
+                    <connections>
+                        <action selector="tapBack:" destination="BYZ-38-t0r" id="atc-wh-8J5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alan-king@500" width="250" height="374.66665649414062"/>
+        <image name="charles-deluvio@500" width="250" height="348"/>
+    </resources>
+</document>
